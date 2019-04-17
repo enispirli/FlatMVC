@@ -34,7 +34,7 @@ namespace FlatMVC.Controllers
 
         public ActionResult _LatestWorks()
         {
-            ViewBag.Categories=
+           
             return View(db.Works.ToList());
         }
 

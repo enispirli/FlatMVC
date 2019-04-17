@@ -1,4 +1,5 @@
 ﻿using Entity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class FlatContext : DbContext
+    public class FlatContext : IdentityDbContext
     {
         public FlatContext():base("YeniCon")
         {
